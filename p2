@@ -1,0 +1,12 @@
+
+func f(a:Int){
+  guard a > 0 else 
+  { 
+    print("negative") 
+    return
+  } 
+}
+f(a:-7)
+
+
+
