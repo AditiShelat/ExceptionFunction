@@ -1,0 +1,15 @@
+enum age : Error{
+  case InvalidAge
+}
+func checkage(a:Int) throws {
+ if(a>18){
+   print("you are eligible to vote")
+ }else{
+   throw age.InvalidAge
+ }
+}
+do{
+  try checkage(a:12)
+}catch let error{
+  print("error: \(error)")
+}
